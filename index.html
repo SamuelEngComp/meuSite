@@ -14,10 +14,8 @@
     
     
     
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.lettering.js"></script>
-    <script src="js/jquery.textillate.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,18 +30,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-
-
-    <script type="text/JavaScript">
-      $("#teste").textillate({ 
-        in: { effect: "splat" },
-        out: { effect: "foldUnfold", 
-                sync: true 
-              },
-        loop: true
-        });
-    </script>
-
 
   </head>
 
@@ -80,12 +66,12 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong id="teste">Samuel Farias</strong>
+              <strong class="nome">Samuel Farias</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <h1 class="teste">Teste</h1>
+            <h1 class="formacao">Engenheiro de Computação</h1>
             <p class="text-faded mb-5">Nós desenvolvemos sistemas web, aplicativos e damos suporte a tudo isso, feito de forma integrada com o cliente!</p>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saiba mais</a>
           </div>
@@ -282,7 +268,39 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="js/jquery.fittext.js" ></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+
+    <script>
+      /* $(function () {*/
+	      $('.nome').textillate({ 
+          in: { effect: 'flash', sequence: true },
+          out: { effect: 'hinge', shuffle: true },
+          loop: true
+        });
+      /*});
+      
+      Efeitos http://textillate.js.org/
+
+      */
+    </script>
+
+<script>
+    /* $(function () {*/
+      $('.formacao').textillate({ 
+        in: { effect: 'flash', sequence: true },
+        out: { effect: 'rotateOutUpRight', shuffle: true },
+        loop: true
+      });
+    /*});
     
+    Efeitos http://textillate.js.org/
+
+    */
+  </script>
+
   </body>
 
 </html>
